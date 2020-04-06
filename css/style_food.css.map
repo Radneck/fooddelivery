@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/style_food.sass"
+    ],
+    "names": [],
+    "file": "style_food.css"
+}
