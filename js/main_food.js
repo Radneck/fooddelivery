@@ -10,4 +10,4 @@ close.click(function(event) {
   $('.modal').removeClass('active');
 });
 
-new.WOW.init();
+new WOW().init();
