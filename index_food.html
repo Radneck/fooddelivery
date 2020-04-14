@@ -7,6 +7,7 @@
 			href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext"
 			rel="stylesheet">
 		<link rel="stylesheet" href="./css/normalize_8.0.3.css">
+		<link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style_food.css">
     <title>Delivery food - Доставка еды на дом</title>
 </head>
@@ -14,14 +15,14 @@
 	<div class="container">
 
 		<header class="header">
-			<img src="img/logo.svg" alt="logo">
-			<input type="text" class="input search-input" placeholder="Адрес доставки">
-			<div class="btns">
+			<img src="img/logo.svg" alt="logo" class="animated bounceIn delay-0.8s">
+			<input type="text" class="input search-input animated fadeInRightBig" placeholder="Адрес доставки">
+			<div class="btns animated fadeInRightBig">
 				<button class="btn btn-prime">
 					<img src="./img/enter.svg" class="btn-icon" alt="Вход">
 					<span class="btn-text">Войти</span>
 				</button>
-				<button class="btn btn-cart">
+				<button class="btn btn-cart" id="btn-cart">
 					<img src="./img/cart.svg" alt="Корзина" class="btn-icon">
 					<span class="btn-text">Корзина</span>
 				</button>
@@ -34,16 +35,16 @@
 
 		<div class="container">
 
-			<section class="hero">
+			<section class="hero animated fadeInLeftBig">
 				<h1 class="hero-title">Онлайн-сервис <br />доставки еды на дом</h1>
 				<p class="hero-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
 			</section>
 			<section class="restaurants">
-				<div class="rest-heading">
+				<div class="rest-heading animated fadeInRightBig">
 					<h2 class="rest-title">Рестораны</h2>
 					<input type="text" class="input rest-search" placeholder="Поиск блюд и ресторанов">
 				</div>
-				<div class="cards">
+				<div class="cards animated fadeInUp">
 					<a href="/restorant.html" class="card">
 						<img src="./img/rest/card_1.jpg" alt="" class="card-item">
 						<div class="card-text">
@@ -184,5 +185,82 @@
 			
 		</div>
 	</footer>
+
+	<div class="modal">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<h3 class="modal-title">Корзина</h3>
+				<button class="close">&times;</button>
+			</div>
+			<!-- /.modal-header -->
+			<div class="modal-body">
+				<div class="modal-row">
+					<span class="row-item">Ролл угорь стандарт</span>
+					<strong class="row-price">250 &#8381;</strong>
+					<div class="counter">
+						<button class="counter-btn">-</button>
+						<span class="count-number">1</span>
+						<button class="counter-btn">+</button>
+					</div>
+				</div>
+				<!-- modal-row -->
+				<div class="modal-row">
+					<span class="row-item">Ролл угорь стандарт</span>
+					<strong class="row-price">250 &#8381;</strong>
+					<div class="counter">
+						<button class="counter-btn">-</button>
+						<span class="count-number">1</span>
+						<button class="counter-btn">+</button>
+					</div>
+				</div>
+				<!-- modal-row -->
+				<div class="modal-row">
+					<span class="row-item">Ролл угорь стандарт</span>
+					<strong class="row-price">250 &#8381;</strong>
+					<div class="counter">
+						<button class="counter-btn">-</button>
+						<span class="count-number">1</span>
+						<button class="counter-btn">+</button>
+					</div>
+				</div>
+				<!-- modal-row -->
+				<div class="modal-row">
+					<span class="row-item">Ролл угорь стандарт</span>
+					<strong class="row-price">250 &#8381;</strong>
+					<div class="counter">
+						<button class="counter-btn">-</button>
+						<span class="count-number">1</span>
+						<button class="counter-btn">+</button>
+					</div>
+				</div>
+				<!-- modal-row -->
+				<div class="modal-row">
+					<span class="row-item">Ролл угорь стандарт</span>
+					<strong class="row-price">250 &#8381;</strong>
+					<div class="counter">
+						<button class="counter-btn">-</button>
+						<span class="count-number">1</span>
+						<button class="counter-btn">+</button>
+					</div>
+				</div>
+				<!-- modal-row -->
+			</div>
+			<!-- /.modal-body -->
+			<div class="modal-footer">
+				<span class="modal-pricetag">1250 &#8381;</span>
+				<div class="modal-btns">
+					<button class="btn btn-submit">Оформить заказ</button>
+					<button class="btn">Отмена</button>
+				</div>
+			</div>
+			<!-- modal footer end -->
+		</div>
+		<!-- modal-dialog-end -->
+	</div>
+	<!-- modal-end -->
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/wow.min.js"></script>
+	<script src="./js/main_food.js"></script>
+
 </body>
 </html>
