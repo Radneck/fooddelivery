@@ -18,13 +18,18 @@
 			<img src="img/logo.svg" alt="logo" class="wow bounceIn" data-wow-delay="2.5s">
 			<input type="text" class="input search-input animated fadeInRightBig" placeholder="Адрес доставки">
 			<div class="btns wow fadeInRightBig" data-wow-delay="0.3s">
-				<button class="btn btn-prime">
+				<span class="user-name"></span>
+				<button class="btn btn-prime btn-auth">
 					<img src="./img/enter.svg" class="btn-icon" alt="Вход">
 					<span class="btn-text">Войти</span>
 				</button>
 				<button class="btn btn-cart" id="btn-cart">
 					<img src="./img/cart.svg" alt="Корзина" class="btn-icon">
 					<span class="btn-text">Корзина</span>
+				</button>
+				<button class="btn btn-prime btn-out" id="btn-out">
+					<!-- <img src="./img/cart.svg" alt="Корзина" class="btn-icon"> -->
+					<span class="btn-text">Выйти</span>
 				</button>
 			</div>
 		</header>
@@ -45,7 +50,7 @@
 					<input type="text" class="input rest-search" placeholder="Поиск блюд и ресторанов">
 				</div>
 				<div class="cards wow fadeInUp" data-wow-delay="1.7s">
-					<a href="https://radneck.github.io/fooddelivery.github.io/restorant.html" class="card">
+					<a href="./restorant.html" class="card">
 						<img src="./img/rest/card_1.jpg" alt="" class="card-item">
 						<div class="card-text">
 	
@@ -186,7 +191,7 @@
 		</div>
 	</footer>
 
-	<div class="modal">
+	<div class="modal modal-cart">
 		<div class="modal-dialog">
 			<div class="modal-header">
 				<h3 class="modal-title">Корзина</h3>
@@ -257,7 +262,35 @@
 		</div>
 		<!-- modal-dialog-end -->
 	</div>
-	<!-- modal-end -->
+	<!-- modal-cart-end -->
+	<div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Авторизация</legend>
+					<label class="label-auth">
+						<span>Логин</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="btn btn-prime btn-login" type="submit">Войти</button>
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- modal-auth-end -->
+
 	<script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/wow.min.js"></script>
 	<script src="./js/main_food.js"></script>
