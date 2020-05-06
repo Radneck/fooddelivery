@@ -15,9 +15,11 @@
 	<div class="container">
 
 		<header class="header">
-			<img src="img/logo.svg" alt="logo" class="wow bounceIn" data-wow-delay="2.5s">
-			<input type="text" class="input search-input animated fadeInRightBig" placeholder="Адрес доставки">
-			<div class="btns wow fadeInRightBig" data-wow-delay="0.3s">
+			<a class="logo">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+			<input type="text" class="input search-input" placeholder="Адрес доставки">
+			<div class="btns">
 				<span class="user-name"></span>
 				<button class="btn btn-prime btn-auth">
 					<img src="./img/enter.svg" class="btn-icon" alt="Вход">
@@ -40,17 +42,20 @@
 
 		<div class="container">
 
-			<section class="hero wow fadeInLeftBig" data-wow-delay="0.8s">
-				<h1 class="hero-title">Онлайн-сервис <br />доставки еды на дом</h1>
-				<p class="hero-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+			<section class="container-hero">
+				<section class="hero">
+					<h1 class="hero-title">Онлайн-сервис <br />доставки еды на дом</h1>
+					<p class="hero-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+				</section>
 			</section>
+
 			<section class="restaurants">
-				<div class="rest-heading wow fadeInRightBig" data-wow-delay="1.2s">
+				<div class="rest-heading">
 					<h2 class="rest-title">Рестораны</h2>
 					<input type="text" class="input rest-search" placeholder="Поиск блюд и ресторанов">
 				</div>
-				<div class="cards wow fadeInUp" data-wow-delay="1.7s">
-					<a href="./restorant.html" class="card">
+				<div class="cards cards-restaurants">
+					<!-- <a href="./restorant.html" class="card card-rest">
 						<img src="./img/rest/card_1.jpg" alt="" class="card-item">
 						<div class="card-text">
 	
@@ -69,7 +74,7 @@
 						</div>
 					</a>
 	
-					<a href="https://radneck.github.io/fooddelivery.github.io/restorant.html" class="card">
+					<a href="./restorant.html" class="card card-rest">
 						<img src="./img/rest/card_2.jpg" alt="" class="card-item">
 						<div class="card-text">
 					
@@ -88,7 +93,7 @@
 						</div>
 					</a>
 	
-					<a href="https://radneck.github.io/fooddelivery.github.io/restorant.html" class="card">
+					<a href="./restorant.html" class="card card-rest">
 						<img src="./img/rest/card_3.jpg" alt="" class="card-item">
 						<div class="card-text">
 					
@@ -107,7 +112,7 @@
 						</div>
 					</a>
 	
-					<a href="https://radneck.github.io/fooddelivery.github.io/restorant.html" class="card">
+					<a href="./restorant.html" class="card card-rest">
 						<img src="./img/rest/card_4.jpg" alt="" class="card-item">
 						<div class="card-text">
 					
@@ -126,7 +131,7 @@
 						</div>
 					</a>
 	
-					<a href="https://radneck.github.io/fooddelivery.github.io/restorant.html" class="card">
+					<a href="./restorant.html" class="card card-rest">
 						<img src="./img/rest/card_5.jpg" alt="" class="card-item">
 						<div class="card-text">
 					
@@ -145,7 +150,7 @@
 						</div>
 					</a>
 	
-					<a href="https://radneck.github.io/fooddelivery.github.io/restorant.html" class="card">
+					<a href="./restorant.html" class="card card-rest">
 						<img src="./img/rest/card_6.jpg" alt="" class="card-item">
 						<div class="card-text">
 					
@@ -162,16 +167,165 @@
 								<div class="category">Бургеры</div>
 							</div>
 						</div>
-					</a>
+					</a> -->
 					<!-- End of the card block -->
+
 				</div>
 			</section>
 
+			<section class="menu hide">
+				<div class="rest-heading-rest">
+					<h2 class="rest-title">Тануки</h2>
+					<div class="card-info-rest">
+						<div class="rating-rest">
+							<img src="./img/rest/star.svg" alt="star" class="rating-star">4.5
+						</div>
+						<div class="price">От 670 р</div>
+						<div class="category">Пицца</div>
+					</div>
+				</div>
+				<div class="cards cards-menu">
+					<!-- <div class="card">
+						<img src="./img/rest/rest_block/rest_1.jpg" alt="" class="card-item">
+						<div class="card-text">
+			
+							<div class="card-heading">
+								<h3 class="card-title card-title-rest">Ролл угорь стандарт</h3>
+			
+							</div>
+			
+							<div class="card-info">
+								<div class="category-rest">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
+							</div>
+							<div class="rest-cart">
+								<button class="btn btn-prime-rest">
+									<span class="btn-text-rest">В корзину</span>
+									<img src="./img/rest/cart-icon.svg" alt="Корзина" class="btn-icon-rest">
+								</button>
+								<strong class="card-price-rest">250 &#8381;</strong>
+							</div>
+						</div>
+					</div>
+			
+					<div class="card">
+						<img src="./img/rest/rest_block/rest_2.jpg" alt="" class="card-item">
+						<div class="card-text">
+			
+							<div class="card-heading">
+								<h3 class="card-title card-title-rest">Калифорния лосось стандарт</h3>
+			
+							</div>
+			
+							<div class="card-info">
+								<div class="category-rest">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</div>
+							</div>
+							<div class="rest-cart">
+								<button class="btn btn-prime-rest">
+									<span class="btn-text-rest">В корзину</span>
+									<img src="./img/rest/cart-icon.svg" alt="Корзина" class="btn-icon-rest">
+								</button>
+								<strong class="card-price-rest">250 &#8381;</strong>
+							</div>
+						</div>
+					</div>
+			
+					<div class="card">
+						<img src="./img/rest/rest_block/rest_3.jpg" alt="" class="card-item">
+						<div class="card-text">
+			
+							<div class="card-heading">
+								<h3 class="card-title card-title-rest">Окинава стандарт</h3>
+			
+							</div>
+			
+							<div class="card-info">
+								<div class="category-rest">Рис, креветка отварная, сыр сливочный, лосось, огурец свежий.</div>
+							</div>
+							<div class="rest-cart">
+								<button class="btn btn-prime-rest">
+									<span class="btn-text-rest">В корзину</span>
+									<img src="./img/rest/cart-icon.svg" alt="Корзина" class="btn-icon-rest">
+								</button>
+								<strong class="card-price-rest">395 &#8381;</strong>
+							</div>
+						</div>
+					</div>
+			
+					<div class="card">
+						<img src="./img/rest/rest_block/rest_4.jpg" alt="" class="card-item">
+						<div class="card-text">
+			
+							<div class="card-heading">
+								<h3 class="card-title card-title-rest">Цезарь маки хl</h3>
+			
+							</div>
+			
+							<div class="card-info">
+								<div class="category-rest">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь</div>
+							</div>
+							<div class="rest-cart">
+								<button class="btn btn-prime-rest">
+									<span class="btn-text-rest">В корзину</span>
+									<img src="./img/rest/cart-icon.svg" alt="Корзина" class="btn-icon-rest">
+								</button>
+								<strong class="card-price-rest">400 &#8381;</strong>
+							</div>
+						</div>
+					</div>
+			
+					<div class="card">
+						<img src="./img/rest/rest_block/rest_5.jpg" alt="" class="card-item">
+						<div class="card-text">
+			
+							<div class="card-heading">
+								<h3 class="card-title card-title-rest">Ясай маки стандарт 185 г</h3>
+			
+							</div>
+			
+							<div class="card-info">
+								<div class="category-rest">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</div>
+							</div>
+							<div class="rest-cart">
+								<button class="btn btn-prime-rest">
+									<span class="btn-text-rest">В корзину</span>
+									<img src="./img/rest/cart-icon.svg" alt="Корзина" class="btn-icon-rest">
+								</button>
+								<strong class="card-price-rest">250 &#8381;</strong>
+							</div>
+						</div>
+					</div>
+			
+					<div class="card">
+						<img src="./img/rest/rest_block/rest_6.jpg" alt="" class="card-item">
+						<div class="card-text">
+			
+							<div class="card-heading">
+								<h3 class="card-title card-title-rest">Ролл с креветкой стандарт</h3>
+			
+							</div>
+			
+							<div class="card-info">
+								<div class="category-rest">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</div>
+							</div>
+							<div class="rest-cart">
+								<button class="btn btn-prime-rest">
+									<span class="btn-text-rest">В корзину</span>
+									<img src="./img/rest/cart-icon.svg" alt="Корзина" class="btn-icon-rest">
+								</button>
+								<strong class="card-price-rest">599 &#8381;</strong>
+							</div>
+						</div>
+					</div> -->
+			
+					<!-- End of the card block -->
+				</div>
+			</section>
+			
 		</div>
 
 	</main>
 
-	<footer class="footer wow fadeInUp" data-wow-delay="0.5s">
+	<footer class="footer">
 		<div class="container">
 			<div class="footer-block">
 				<img src="./img/logo.svg" alt="footer_logo" class="logo footer-logo">
@@ -292,7 +446,7 @@
 	<!-- modal-auth-end -->
 
 	<script src="./js/jquery-3.4.1.min.js"></script>
-	<script src="./js/wow.min.js"></script>
+	<!-- <script src="./js/wow.min.js"></script> -->
 	<script src="./js/main_food.js"></script>
 
 </body>
