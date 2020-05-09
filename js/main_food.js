@@ -45,15 +45,11 @@ function removeModal() {
   modalAuth.classList.remove('active');
 }
 
-function emptyAlert() {
-  if (login == '') {
-    login = prompt('Заполни логин редиска!');
-  }
-}
-
-function empty() {
-  if (login == '') {
-    login = alert('Братан, ты не авторизован!');
+function checkAuth() {
+  if (login) {
+    authorized();
+  } else {
+    notAuthorized();
   }
 }
 
@@ -91,7 +87,7 @@ function notAuthorized() {
 
     localStorage.setItem('foodDelivery', login);
 
-    
+
 
     removeModal();
     buttonAuth.removeEventListener('click', toggleModalAuth);
@@ -106,13 +102,19 @@ function notAuthorized() {
   logInForm.addEventListener('submit', logIn);
 }
 
-function checkAuth() {
-  if (login) {
-    authorized();
-  } else {
-    notAuthorized();
+function emptyAlert() {
+  if (login == '') {
+    login = prompt('Заполни логин редиска!');
   }
 }
+
+function empty() {
+  if (login == '') {
+    alert('Братан, ты не авторизован!');
+  } 
+  
+}
+
 
 function createRestCards() {
 
@@ -175,7 +177,6 @@ function openRestCard(event) {
   const rest = target.closest('.card-rest');
 
   
-
   if (rest) {
     empty();
     contHero.classList.add('hide');
